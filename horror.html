@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html>
+
+    <title> Homepage </title>
+    
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+          body bside img {
+            margin: 5px;
+          }
+        </style>
+    </head>
+
+</html>
+<body>
+<header>
+   
+    <a href = "index.html"><img src="C:\Users\bida21-113\Downloads\WMD\pic\lyonlogo.jpeg" alt="pic" align ="left" width="180" height="150">
+    <a href = "index.html"></a>
+    <h1 align = " center"> Lyon Cinemas </h1>
+    <h1 style="color: white ; font-size: 40px;" align = "center"> Lyon Cinemas</h1>
+  
+</header>
+<nav>
+    <ul>
+   
+
+        <li><a href = "index.html">Home</a></li>
+        <li><a href = "location.html">Location</a></li>
+         <li><a href = "aboutus.html">About Us</a></li>
+          <li><a href = "contactus.html">Contact Us</a></li>
+          <li><a href = "feedback.html">Feedback</a></li>
+          
+     </ul>
+</nav>
+
+ <body>   
+<aside>
+    <nav>
+        <ol>
+    <li><a href="action.html">Action </a></li>
+    <li><a href="kids.html">Kids Movies</a></li>
+     <li><a href="horror.html">Horror</a></li>
+      <li><a href="comedy.html">Comedy</a></li>
+      <li><a href = "bookings.html">Bookings</a></li>
+      </ol>
+    </nav>
+  </aside>
+
+    
+<section>
+    <div class= "center">
+        <h2> Horror Movies </h2> </div>
+      
+        <p>Mindblowing Horrors to watch!</p>
+        
+        <div class="slideshow-container">
+        
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <a href = "bookings.html">  <img src="C:\Users\bida21-113\Downloads\WMD\pic\annabelle.jpg" alt="pic"" style="width:100%"><a href = "bookings.html"></a>
+          <div class="text">Annabelle</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <a href = "bookings.html"> <img src="C:\Users\bida21-113\Downloads\WMD\pic\jigsaw.jpg" alt="pic" style="width:100%"><a href = "bookings.html"></a>
+          <div class="text">Jigsaw</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <a href = "bookings.html"> <img src="C:\Users\bida21-113\Downloads\WMD\pic\quiet.jpg" alt="pic" style="width:100%"><a href = "bookings.html"></a>
+          <div class="text">A quiet place</div>
+        </div>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+        </div>
+        
+        <script>
+          let slideIndex = 0;
+          showSlides();
+          
+          function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+          }
+          </script>
+  
+        </section>
+
+        <bside>
+            <p>1. Annabelle is Horror film about a couple that begins to experience terrifying supernatural occurrences involving a vintage doll shortly after their home is invaded by satanic cultists. </p>
+       <p>2. In Jigsaw bodies are turning up around the city, each having met a uniquely gruesome demise. As the investigation proceeds, evidence points to one suspect: John Kramer, the man known as Jigsaw, who has been dead for over 10 years. </p>
+        <p> 3. A Quiet Place is about a post-apocalyptic world, a family is forced to live in silence while hiding from monsters with ultra-sensitive hearing.</p>
+    </bside>
+</body>
+<footer>
+    <div id="footer"> <p> About Us: We are the best cinema in the city bringing you quality and upto date films from across the world. <a href="aboutus.html">more </a></p>
+        <a href="aboutus.html">Contact Us </a>
+</footer>
+</html>

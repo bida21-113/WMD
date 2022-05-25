@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html>
+
+    <title> Action </title>
+    
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    
+</html>
+<body>
+<header>
+   
+    <a href = "index.html"><img src="C:\Users\bida21-113\Downloads\WMD\pic\lyonlogo.jpeg" alt="pic" align ="left" width="180" height="150">
+    <a href = "index.html"></a>
+    <h1 align = " center"> Lyon Cinemas </h1>
+    <h1 style="color: white ; font-size: 40px;" align = "center"> Lyon Cinemas</h1>
+  
+</header>
+<nav>
+    <ul>
+   
+
+        <li><a href = "index.html">Home</a></li>
+        <li><a href = "location.html">Location</a></li>
+         <li><a href = "aboutus.html">About Us</a></li>
+          <li><a href = "contactus.html">Contact Us</a></li>
+          <li><a href = "feedback.html">Feedback</a></li>
+      </ul>    
+</nav>
+
+   
+<aside>
+    <nav>
+        <ol>
+    <li><a href="action.html">Action </a></li>
+    <li><a href="kids.html">Kids Movies</a></li>
+     <li><a href="horror.html">Horror</a></li>
+      <li><a href="comedy.html">Comedy</a></li>
+      <li><a href = "bookings.html">Booking</a></li>
+      </ol>
+    </nav>
+  </aside>
+    
+<section>
+    <div class= "center">
+        <h2> Action Movies </h2> </div>
+      
+        <p>Exciting Action to watch!</p>
+        
+        <div class="slideshow-container">
+        
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <a href = "bookings.html">  <img src="C:\Users\bida21-113\Downloads\WMD\pic\fnf.jpg" alt="pic"" style="width:100%"><a href = "bookings.html"></a>
+          <div class="text">Fast and Furious</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <a href = "bookings.html"> <img src="C:\Users\bida21-113\Downloads\WMD\pic\Equalizer.jpg" alt="pic" style="width:100%"><a href = "bookings.html"></a>
+          <div class="text">The Equalizer</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <a href = "bookings.html"> <img src="C:\Users\bida21-113\Downloads\WMD\pic\johnw.jpg" alt="pic" style="width:100%"><a href = "bookings.html"></a>
+          <div class="text">John Wick</div>
+        </div>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+        </div>
+        
+        <script>
+          let slideIndex = 0;
+          showSlides();
+          
+          function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+          }
+          </script>
+  
+</section>
+<bside>
+ <p>1. Lawman Luke Hobbs (Dwayne "The Rock" Johnson) and outcast Deckard Shaw (Jason Statham) form an unlikely alliance when a cyber-genetically enhanced villain threatens the future of humanity.</p>   
+<p>2. The Equalizer is about a man who believes he has put his mysterious past behind him cannot stand idly by when he meets a young girl under the control of ultra-violent Russian gangsters.</p>
+<p>3. John Wick is an ex-hit-man comes out of retirement to track down the gangsters that killed his dog and took everything from him</p>
+</bside>
+  </body>
+  <footer>
+    <div id="footer"> <p> About Us: We are the best cinema in the city bringing you quality and upto date films from across the world. <a href="aboutus.html">more </a></p>
+        <a href="aboutus.html">Contact Us </a>
+</footer>
+</html>

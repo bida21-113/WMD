@@ -1,0 +1,122 @@
+
+
+<!DOCTYPE html>
+<html>
+
+    <title> Homepage </title>
+    
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    
+</html>
+<body>
+<header>
+   
+    <a href = "index.html"><img src="C:\Users\bida21-113\Downloads\WMD\pic\lyonlogo.jpeg" alt="pic" align ="left" width="180" height="150">
+    <a href = "index.html"></a>
+    <h1 align = " center"> Lyon Cinemas </h1>
+    <h1 style="color: white ; font-size: 40px;" align = "center"> Lyon Cinemas</h1>
+  
+</header>
+<nav>
+    <ul>
+   
+
+        <li><a href = "index.html">Home</a></li>
+        <li><a href = "location.html">Location</a></li>
+         <li><a href = "aboutus.html">About Us</a></li>
+          <li><a href = "contactus.html">Contact Us</a></li>
+          <li><a href = "feedback.html">Feedback</a></li>
+          
+     </ul>
+</nav>
+
+ <body>   
+<aside>
+    <nav>
+        <ol>
+    <li><a href="action.html">Action </a></li>
+    <li><a href="kids.html">Kids Movies</a></li>
+     <li><a href="horror.html">Horror</a></li>
+      <li><a href="comedy.html">Comedy</a></li>
+      <li><a href = "bookings.html">Bookings</a></li>
+    
+      </ol>
+    </nav>
+  </aside>
+    
+<section>
+
+  <div class= "center">
+  <h2> Childern and Family Movies </h2> </div>
+
+  <p>Exciting kids movies to watch!</p>
+  
+  <div class="slideshow-container">
+  
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <a href = "bookings.html">  <img src="C:\Users\bida21-113\Downloads\WMD\pic\lionking.jpg" alt="pic"" style="width:100%"><a href = "bookings.html"></a>
+    <div class="text">Lion King</div>
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <a href = "bookings.html"> <img src="C:\Users\bida21-113\Downloads\WMD\pic\homealone.jpg" alt="pic" style="width:100%"><a href = "bookings.html"></a>
+    <div class="text">Home Alone</div>
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <a href = "bookings.html"> <img src="C:\Users\bida21-113\Downloads\WMD\pic\birds.png" alt="pic" style="width:100%"><a href = "bookings.html"></a>
+    <div class="text">Angry Birds</div>
+  </div>
+  
+  </div>
+  <br>
+  
+  <div style="text-align:center">
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+  </div>
+  
+  <script>
+    let slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+    </script>
+</section>
+
+  <bside> 
+<p> 1. Home Alone is a film about an 8 who was accidentally left home alone by his family during a Christmas vacation. He takes it upon himself to protect the house from a pair of burglars.</p>
+<p> 2. The Lion King is a Walt Disney Animation film about a Lion Prince Simba who is targeted by his uncle, who wants to ascend the throne himself and rule over priderock.</p>
+<p> 3. Angry Birds When an island populated by happy, flightless birds is visited by mysterious green piggies, it's up to three unlikely outcasts - Red, Chuck and Bomb - to figure out what the pigs are up to.</p>
+  </bside>
+
+  </body>
+
+  <footer>
+    <div id="footer"> <p> About Us: We are the best cinema in the city bringing you quality and upto date films from across the world. <a href="aboutus.html">more </a></p>
+      <a href="aboutus.html">Contact Us </a>
+
+</footer>
